@@ -13,16 +13,14 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [
-				{
-					"name": "derivedColumn1"
-				}
-			],
+			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          Column_1 as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> fixedLengthTBE",
-				"fixedLengthTBE derive(Werknummer = substring(Column_1, 1, 4)) ~> derivedColumn1"
+				"     ignoreNoFilesFound: false) ~> fixedLengthTBE"
 			]
 		}
 	}
