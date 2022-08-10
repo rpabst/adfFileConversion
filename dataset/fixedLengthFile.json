@@ -1,0 +1,29 @@
+{
+	"name": "fixedLengthFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azBlobStorageInput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "TBI25RQ.txt",
+				"container": "fromtbe"
+			},
+			"columnDelimiter": "",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
