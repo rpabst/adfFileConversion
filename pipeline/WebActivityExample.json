@@ -20,7 +20,11 @@
 					"headers": {
 						"Content-Type": "application/json"
 					},
-					"body": "",
+					"body": {
+						"title": "BAFFA",
+						"body": "xxyy",
+						"userId": 1
+					},
 					"datasets": [
 						{
 							"referenceName": "jsJsonFile",
