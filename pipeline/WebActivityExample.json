@@ -20,11 +20,13 @@
 					"headers": {
 						"Content-Type": "application/json"
 					},
-					"body": {
-						"title": "BAFFA",
-						"body": "@variables('surname')",
-						"userId": 1
-					},
+					"body": "",
+					"datasets": [
+						{
+							"referenceName": "jsJsonFile",
+							"type": "DatasetReference"
+						}
+					],
 					"disableCertValidation": true
 				}
 			}

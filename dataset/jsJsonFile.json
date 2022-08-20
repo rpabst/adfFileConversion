@@ -1,0 +1,32 @@
+{
+	"name": "jsJsonFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azBlobStorageInput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "input.json",
+				"container": "json"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string"
+				},
+				"body": {
+					"type": "string"
+				},
+				"userId": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}
