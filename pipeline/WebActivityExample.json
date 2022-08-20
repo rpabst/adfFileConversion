@@ -15,18 +15,26 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://countriesnow.space/api/v0.1/countries/population/cities/",
+					"url": " https://jsonplaceholder.typicode.com/posts",
 					"method": "POST",
 					"headers": {
 						"Content-Type": "application/json"
 					},
 					"body": {
-						"city": "berlin"
+						"title": "BAFFA",
+						"body": "@variables('surname')",
+						"userId": 1
 					},
 					"disableCertValidation": true
 				}
 			}
 		],
+		"variables": {
+			"surname": {
+				"type": "String",
+				"defaultValue": "rafael"
+			}
+		},
 		"annotations": []
 	}
 }
