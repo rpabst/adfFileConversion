@@ -1,0 +1,12 @@
+{
+	"name": "rstPostCallCities",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://countriesnow.space/api/v0.1/countries/population/cities",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
