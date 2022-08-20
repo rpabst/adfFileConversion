@@ -22,7 +22,8 @@
 					},
 					"body": {
 						"city": "berlin"
-					}
+					},
+					"disableCertValidation": true
 				}
 			}
 		],
