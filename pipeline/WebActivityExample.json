@@ -21,9 +21,8 @@
 						"Content-Type": "application/json"
 					},
 					"body": {
-						"title": "BAFFA",
-						"body": "xxyy",
-						"userId": 1
+						"value": "@variables('completeJSON')",
+						"type": "Expression"
 					},
 					"datasets": [
 						{
@@ -39,6 +38,10 @@
 			"surname": {
 				"type": "String",
 				"defaultValue": "rafael"
+			},
+			"completeJSON": {
+				"type": "String",
+				"defaultValue": "{     \"title\": \"BAFFA\",     \"body\": \"jonny\",     \"userId\": 1   }"
 			}
 		},
 		"annotations": []
